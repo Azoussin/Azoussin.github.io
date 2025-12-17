@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gift Cadre - Luxury Gift Frames</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic page styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            direction: ltr;
+        }
+
+        .hero-section {
+            background-image: url('hero-background.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 20px;
+            color: #fff;
+        }
+
+        .hero-section h1 {
+            font-size: 36px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-section p {
+            font-size: 20px;
+            margin: 20px 0;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .cta-button {
+            background-color: #d4af37;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .cta-button:hover {
+            background-color: #c5a030;
+        }
+
+        .cta-button span {
+            font-size: 12px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        /* Social Proof Section */
+        .social-proof {
+            background-color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .social-proof h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .social-proof p {
+            font-size: 18px;
+            color: #777;
+        }
+
+        /* Gift Cadre Collection */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .grid-item {
+            position: relative;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        .grid-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .grid-item p {
+            font-size: 16px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background-color: #d4af37;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .cta-section h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .cta-button-large {
+            background-color: #000;
+            padding: 18px 40px;
+            font-size: 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .cta-button-large:hover {
+            background-color: #444;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+    <h1>Unlock a Luxury Gift Frame for Someone You Love</h1>
+    <p>Limited-Time Access – Premium Gift Cadres Available Today</p>
+    <a href="#cta" class="cta-button">
+        Unlock My Gift Frame Now
+        <span>Only takes 30 seconds</span>
+    </a>
+</section>
+
+<!-- SOCIAL PROOF SECTION -->
+<section class="social-proof">
+    <h2>⭐⭐⭐⭐⭐ (4.9/5 from 12,000+ users)</h2>
+    <p>Trusted by gift lovers worldwide</p>
+</section>
+
+<!-- GIFT CADRE COLLECTION -->
+<section class="grid">
+    <div class="grid-item">
+        <img src="wedding-frame.jpg" alt="Wedding Gift Frame">
+        <p>Unforgettable Wedding Gift</p>
+    </div>
+    <div class="grid-item">
+        <img src="anniversary-frame.jpg" alt="Anniversary Gift Frame">
+        <p>Celebrate Love with a Luxury Frame</p>
+    </div>
+    <div class="grid-item">
+        <img src="birthday-frame.jpg" alt="Birthday Gift Frame">
+        <p>The Perfect Birthday Gift</p>
+    </div>
+    <div class="grid-item">
+        <img src="family-frame.jpg" alt="Family Gift Frame">
+        <p>Show Your Love with an Elegant Gift</p>
+    </div>
+    <div class="grid-item">
+        <img src="baby-frame.jpg" alt="Baby Gift Frame">
+        <p>Celebrate Your Little One's Joy</p>
+    </div>
+    <div class="grid-item">
+        <img src="golden-frame.jpg" alt="Luxury Golden Frame">
+        <p>For the Sophisticated Gift Giver</p>
+    </div>
+</section>
+
+<!-- STRONG CTA SECTION -->
+<section class="cta-section" id="cta">
+    <h2>Your Perfect Gift Is One Click Away</h2>
+    <a href="https://your-cpa-offer-link.com" class="cta-button-large">Unlock My Gift Cadre Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a> | <a href="#">Contact Us</a></p>
+</footer>
+
+</body>
+</html>
