@@ -1,0 +1,63 @@
+<!-- tool_card.html -->
+<div class="tool-card">
+    <div class="tool-icon">{{ include.icon | default: "🔧" }}</div>
+    <div class="tool-info">
+        <h3>{{ include.title | default: "Android Tool" }}</h3>
+        <p>{{ include.description | default: "Fix common Android issues" }}</p>
+        <div class="tool-meta">
+            <span class="tool-size">📦 {{ include.size | default: "2.4 MB" }}</span>
+            <span class="tool-version">🔄 {{ include.version | default: "v2.1" }}</span>
+            <span class="tool-android">🤖 Android {{ include.android | default: "8.0+" }}</span>
+        </div>
+        <a href="{{ include.link | default: '/landing-page' }}" class="tool-download-btn">
+            Download Free
+        </a>
+    </div>
+</div>
+
+<style>
+.tool-card {
+    background: white;
+    border-radius: 12px;
+    padding: 25px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s;
+}
+
+.tool-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.tool-icon {
+    font-size: 50px;
+    margin-right: 25px;
+}
+
+.tool-info h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.tool-meta {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.tool-download-btn {
+    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 600;
+    margin-top: 10px;
+}
+</style>

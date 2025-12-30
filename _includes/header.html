@@ -1,0 +1,78 @@
+<!-- header.html -->
+<header class="site-header">
+    <div class="logo">
+        <a href="{{ '/' | relative_url }}">
+            <img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Vaul.me Logo">
+            <span>Vaul.me</span>
+        </a>
+    </div>
+    
+    <nav class="main-nav">
+        <a href="{{ '/' | relative_url }}" {% if page.url == "/" %}class="active"{% endif %}>
+            🏠 Home
+        </a>
+        <a href="{{ '/landing-page' | relative_url }}" {% if page.url == "/landing-page/" %}class="active"{% endif %}>
+            🔧 Main Tool
+        </a>
+        <a href="{{ '/posts' | relative_url }}" {% if page.url contains "/posts" %}class="active"{% endif %}>
+            📚 Guides
+        </a>
+        <a href="{{ '/about' | relative_url }}" {% if page.url == "/about/" %}class="active"{% endif %}>
+            ℹ️ About
+        </a>
+        <a href="{{ '/contact' | relative_url }}" {% if page.url == "/contact/" %}class="active"{% endif %}>
+            📞 Contact
+        </a>
+    </nav>
+    
+    <div class="cta-button">
+        <a href="{{ '/landing-page' | relative_url }}">Get Free Tool →</a>
+    </div>
+</header>
+
+<style>
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 30px;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.main-nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: #4361ee;
+    border-bottom: 2px solid #4361ee;
+}
+
+.cta-button a {
+    background: linear-gradient(135deg, #4361ee, #3a0ca3);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+</style>

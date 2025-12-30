@@ -1,0 +1,84 @@
+<!-- footer.html -->
+<footer class="site-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Vaul.me</h4>
+            <p>Your digital tools vault for Android solutions and tech utilities.</p>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="{{ '/' | relative_url }}">Home</a><br>
+            <a href="{{ '/landing-page' | relative_url }}">Main Tool</a><br>
+            <a href="{{ '/about' | relative_url }}">About Us</a><br>
+            <a href="{{ '/contact' | relative_url }}">Contact</a>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Legal</h4>
+            <a href="{{ '/privacy' | relative_url }}">Privacy Policy</a><br>
+            <a href="{{ '/terms' | relative_url }}">Terms of Service</a><br>
+            <a href="{{ '/disclaimer' | relative_url }}">Disclaimer</a>
+        </div>
+        
+        <div class="footer-section">
+            <h4>Connect</h4>
+            <p>Email: contact@vaul.me</p>
+            <p>Response: 24-48 hours</p>
+        </div>
+    </div>
+    
+    <div class="footer-bottom">
+        <p>© 2024 Vaul.me - Digital Tools Vault. All rights reserved.</p>
+        <p class="disclaimer-note">
+            <small>This site contains affiliate offers. We provide free tools through partner offers.</small>
+        </p>
+    </div>
+</footer>
+
+<style>
+.site-footer {
+    background: #f8f9fa;
+    padding: 40px 20px;
+    margin-top: 60px;
+    border-top: 1px solid #eee;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.footer-section a {
+    color: #666;
+    text-decoration: none;
+    line-height: 1.8;
+}
+
+.footer-section a:hover {
+    color: #4361ee;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #888;
+    font-size: 0.9em;
+}
+
+.disclaimer-note {
+    color: #999;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+</style>

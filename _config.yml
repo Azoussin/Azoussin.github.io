@@ -1,0 +1,44 @@
+# _config.yml
+title: "Vaul.me"
+description: "Digital Tools Vault - Smart Solutions & Utilities"
+baseurl: "" 
+url: "https://vaul.me" 
+theme: minima
+
+# Site language
+lang: "en-US"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Collections
+collections:
+  tools:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Custom variables
+tools:
+  - name: "Android Storage Fix"
+    link: "/landing-page"
+    description: "Advanced storage cleaning tool"
+  - name: "Phone Speed Boost"
+    link: "/landing-page"
+    description: "Performance optimization utility"
+  - name: "Password Recovery"
+    link: "/landing-page"
+    description: "Secure password reset tool"
+
+google_analytics: "" # Add later if needed
